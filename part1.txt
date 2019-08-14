@@ -1,4 +1,7 @@
+Use UsersTables;
+
 Public function Save()
 {
+   $users = UsersTables::first();
    return view(index);
 }
