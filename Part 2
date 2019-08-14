@@ -1,4 +1,4 @@
 Public function Show2()
 {
-  return view(index3);
+  return view(index);
 }
