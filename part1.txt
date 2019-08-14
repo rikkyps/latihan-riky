@@ -1,7 +1,9 @@
 Use UsersTables;
+Use CategoriesTables;
 
 Public function Save()
 {
+   $cat = CategoriesTables::Where('id', 1)->get();
    $users = UsersTables::first();
-   return view(index, compact('users'));
+   return view(index, compact('users', 'cat'));
 }
